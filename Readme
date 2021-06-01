@@ -1,8 +1,0 @@
-This is Text Analyser Made With Django. 
-This Can Perform following operations:
-a) Remove Nums
-b) Remove Lines 
-c) Convert To Caps
-d) Remove Extra Spaces in text
-e) Remove Punctutation 
-
