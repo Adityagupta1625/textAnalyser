@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TextUtils
+    </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <style>
+        #head {
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin: 12px;
+            padding: 8px;
+        }
+
+        #fit {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1.2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 24px;
+            margin: 12px;
+            width: 100%;
+
+        }
+
+        #fit input {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1.2rem;
+            padding: 24px;
+            margin: 20px;
+
+        }
+
+        /* #back::before {
+            background: url('https://source.unsplash.com/random');
+            opacity: 0.3;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            content: "";
+            top: 0px;
+            left: 0px;
+        } */
+
+   
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <div id="back">
+
+
+        <h1 id="head">Welcome to the text analyazer.</h1>
+
+        <div id="fit">
+
+            <form action='/Analyze' method='get'>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Enter your text here" id="floatingTextarea2"
+                        style="height: 200px; width:800px" name='text'></textarea>
+                   
+                </div>
+                <div class="my-4">
+
+                    <div class="custom-control custom-switch my-2">
+                        <input type="checkbox" name="removepunc" class="custom-control-input" id="customSwitch1">
+                        <label class="custom-control-label" for="customSwitch1">Remove Punctuations</label>
+                      </div>
+                    <div class="custom-control custom-switch my-2">
+                        <input type="checkbox" name="fullcaps" class="custom-control-input" id="customSwitch2">
+                        <label class="custom-control-label" for="customSwitch2">All Caps</label>
+                      </div>
+                    <div class="custom-control custom-switch my-2">
+                        <input type="checkbox" name="newlineremover" class="custom-control-input" id="customSwitch3">
+                        <label class="custom-control-label" for="customSwitch3">New Line Remover</label>
+                      </div>
+                    <div class="custom-control custom-switch my-2">
+                        <input type="checkbox" name="extraspaceremover" class="custom-control-input" id="customSwitch4">
+                        <label class="custom-control-label" for="customSwitch4">Extra Space Remover</label>
+                      </div>
+                    <div class="custom-control custom-switch my-2">
+                        <input type="checkbox" name="removenum" class="custom-control-input" id="customSwitch5">
+                        <label class="custom-control-label" for="customSwitch5">Remove Num</label>
+                      </div>
+                </div>
+                <!-- <input type="checkbox" name="removepunc"> Remove Punctuations<br>
+                    <input type="checkbox" name="fullcaps"> CapsAll<br>
+                    <input type="checkbox" name="newlineremover"> New Line Remover<br>
+                    <input type="checkbox" name="extraspaceremover"> Extra Spaces Remover<br> -->
+                <button type='submit' class="btn btn-primary"> Analyze Text</button>
+
+            </form>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
