@@ -3,7 +3,7 @@
 This TextAnalyser is Written in Django 
 
 
-This Can Perform above Operations:
+#This Can Perform above Operations:
 
 a) Remove Punctutations
 
@@ -17,7 +17,7 @@ d) Removes Numbers in betwwen text
 
 e) Captalize All the Text
 
-Requirements:
+#Requirements:
 
 Django-3.2.0
 
